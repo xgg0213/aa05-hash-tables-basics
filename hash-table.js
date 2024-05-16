@@ -31,6 +31,13 @@ class HashTable {
 
   insertNoCollisions(key, value) {
     // Your code here 
+    this.data[this.count] = {'key':key, 'value':value}
+    this.count++;
+
+    if (this.count>this.capacity) {
+      throw new Error('hash collision or same key/value pair already exists!')
+    }
+
   }
 
   insertWithHashCollisions(key, value) {
