@@ -3,6 +3,7 @@ const { expect } = require('chai');
 const HashTable = require('../hash-table.js');
 
 
+
 describe('Hash table constructor', () => {
 
   let hashTable;
